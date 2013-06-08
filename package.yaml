@@ -1,0 +1,24 @@
+
+name: yaml-update
+version: 0.1.0
+author: Alex Kocharin
+
+description: Update yaml file preserving structure (comments, linebreaks, etc.), VERY limited
+
+main: index.js
+directories: 
+  test: tests
+
+repository:
+  type: git
+  url: https://github.com/rlidwka/yaml-update
+
+bugs:
+  url: http://github.com/rlidwka/yaml-update/issues
+
+keywords: 
+  - yaml
+  - update
+
+license: BSD
+
