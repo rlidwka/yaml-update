@@ -1,6 +1,6 @@
 
 name: yaml-update
-version: 0.1.0
+version: 0.1.1
 author: Alex Kocharin
 
 description: Update yaml file preserving structure (comments, linebreaks, etc.), VERY limited
