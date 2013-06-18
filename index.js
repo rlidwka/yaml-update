@@ -88,7 +88,7 @@ module.exports.edit = function editor(data, json) {
 	var old_data = yaml.safeLoad(data);
 
 	for (var i in new_data) {
-		if (old_data[i] === null) {
+		if (old_data[i] == null) {
 			insert_tags[i] = new_data[i];
 		} else if (JSON.stringify(old_data[i]) !== JSON.stringify(new_data[i])) {
 			replace_tags[i] = new_data[i];
@@ -96,8 +96,8 @@ module.exports.edit = function editor(data, json) {
 	}
 
 	for (var i in old_data) {
-		if (new_data[i] === null) {
-			insert_tags[i] = old_data[i];
+		if (new_data[i] == null) {
+			delete_tags[i] = old_data[i];
 		}
 	}
 
