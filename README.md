@@ -1,6 +1,8 @@
 
 This module tries to update an existing yaml data preserving its structure (comments, linebreaks, etc.).
 
+It's very hard to reliably update a part of yaml document. But it doesn't mean we shouldn't try.
+
 ## Usage
 
 ```javascript
