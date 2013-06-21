@@ -39,6 +39,7 @@ function apply_changes(data, delete_tags, insert_tags, replace_tags) {
 				} else if (delete_tags[key]) {
 					var insert = null;
 				}
+				line = null;
 
 				while(data.length && insert != null) {
 					var line = data.shift();
