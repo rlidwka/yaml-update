@@ -35,7 +35,7 @@ function apply_changes(data, delete_tags, insert_tags, replace_tags) {
 				var ins_data = {};
 				if (replace_tags[key]) {
 					ins_data[idx] = replace_tags[key];
-					var insert = yaml.safeDump(ins_data).replace(idx+': ', m[1]).replace(/\n$/, '');
+					var insert = yaml.safeDump(ins_data).replace(idx+':', m[1]).replace(/\n$/, '');
 				} else if (delete_tags[key]) {
 					var insert = null;
 				}
